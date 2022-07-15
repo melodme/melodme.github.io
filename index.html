@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Official MelodMe Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas%20Neue">
+<link rel="icon" href="icon.jpg">
+<style>
+body {
+  font-family: "Bebas Neue", serif;
+}
+
+button {
+  font-family: "Bebas Neue", serif;
+  padding: 6px;
+  background: #3271a8;
+  color: white;
+  font-size: 20px;
+  border-radius: 32px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 8px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #3271a8;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #3271a8;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  background: #d8dce3;
+}
+
+.content2 {
+  padding: 16px;
+  background: #c1a6e0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #3271a8;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="navbar">
+  <a style="font-size: 24px" class="active" href="javascript:void(0)">Home</a>
+  <a style="font-size: 24px" href="javascript:void(0)">Music</a>
+  <a style="font-size: 24px" href="javascript:void(0)">Shows</a>
+  <a style="font-size: 24px" href="javascript:void(0)">Merch</a>
+</div>
+
+<br>
+
+<div class="content2">
+  <h1 style="font-size: 48px">Experience MelodMe on a new level.</h1>
+  <h1>DRIVE - the album.</h1>
+  <button onclick="window.location.href='/drive/order'">Pre-Order</button><br><br>
+  <button onclick="window.location.href='/drive/order'">Album Playlist</button>
+  <h2>&copy Cherry Entertainment Music & SSR. Album coming soon.</h2>
+</div>
+<br>
+<h1>Some Amazing Music by MelodMe:</h1>
+<br>
+<div class="content">
+  <h1>Latino Laugh (feat. MelodMe)</h1>
+  <h2>by East Wing</h2>
+  <button onclick="window.location.href='https://youtu.be/WTt-x1YKyDI'">Listen Now</button>
+</div>
+<br>
+<div class="content">
+  <h1>AK Hey Hey</h1>
+  <h2>by MelodMe</h2>
+  <button onclick="window.location.href='https://youtu.be/VV5Aow9Lc7s'">Listen Now</button>
+</div>
+<br>
+<div class="content">
+  <h1>Ghost On Me</h1>
+  <h2>by MelodMe</h2>
+  <button onclick="window.location.href='/GhostOnMe'">Listen Now</button>
+</div>
+
+<br>
+<div class="header">
+  <h2>Music like never before.</h2>
+  <button>Play MelodMe's Hits</button>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="footer">
+  <p>&copy 2022 Cherry Entertainment Music & SSR.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+</html>
+
